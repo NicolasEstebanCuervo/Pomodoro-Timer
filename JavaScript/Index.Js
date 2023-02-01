@@ -29,9 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	const iniciarTemporizador = (minutos, segundos) => {
-		ocultarElemento($contenedorInputs);
-		mostrarElemento($btnPausar);
-		ocultarElemento($btnIniciar);
+
+		mostrarElemento($contenedorInputs);
+		ocultarElemento($btnPausar);
+		mostrarElemento($btnIniciar);
 		ocultarElemento($btnDetener);
 		if (fechaFuturo) {
 			fechaFuturo = new Date(new Date().getTime() + diferenciaTemporal);
@@ -48,10 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
 				sonido.play();
 				cambiarModoDescanso()
 				mostrarElemento($contenedorInputs);
-				mostrarElemento($btnIniciar);
+				mostrarElemento($btnIniciar)
 				$minutos.value = "00";
 				$segundos.value = "00";
-
+				
 			} else {
 				$tiempoRestante.textContent = milisegundosAMinutosYSegundos(tiempoRestante);
 			}
@@ -59,11 +60,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	};
 
 	const pausarTemporizador = () => {
+
 		ocultarElemento($btnPausar);
 		mostrarElemento($btnIniciar);
 		mostrarElemento($btnDetener);
 		diferenciaTemporal = fechaFuturo.getTime() - new Date().getTime();
 		clearInterval(idInterval);
+
 	};
 
 	const detenerTemporizador = () => {
@@ -71,7 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		fechaFuturo = null;
 		diferenciaTemporal = 0;
 		sonido.currentTime = 0;
-		init();
+
+		init()
+
+		$tiempoRestante.textContent ="00:00";
 
 	};
 
@@ -86,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const minutos = parseInt(milisegundos / 1000 / 60);
 		milisegundos -= minutos * 60 * 1000;
 		segundos = (milisegundos / 1000);
-		return `${agregarCeroSiEsNecesario(minutos)}:${agregarCeroSiEsNecesario(segundos.toFixed(1))}`;
+		return `${agregarCeroSiEsNecesario(minutos)}:${agregarCeroSiEsNecesario(segundos.toFixed())}`;
 	};
 	const init = () => {
 		$minutos.value = "00";
@@ -97,18 +103,29 @@ document.addEventListener("DOMContentLoaded", () => {
 		ocultarElemento($btnDetener);
 	};
 
-
 	$btnIniciar.onclick = () => {
+
 		const minutos = parseInt($minutos.value);
 		const segundos = parseInt($segundos.value);
 		if (isNaN(minutos) || isNaN(segundos) || (segundos <= 0 && minutos <= 0)) {
 			return;
 		}
+
 		iniciarTemporizador(minutos, segundos);
+		init()
+
+		ocultarElemento($contenedorInputs);
+		ocultarElemento($btnIniciar);
+		mostrarElemento($btnPausar);
+		ocultarElemento($btnDetener);
+
 	};
+
 	init();	
+
 	$btnPausar.onclick = pausarTemporizador;
 	$btnDetener.onclick = detenerTemporizador;
+	
 });
 
 let TituloDescanso = document.querySelector(".TituloDescanso") 
@@ -116,7 +133,11 @@ let TituloTrabajo = document.querySelector(".TituloTrabajo")
 let Body = document.querySelector(".Body")
 let ContenedorSecundario = document.querySelector(".ContenedorSecundario")
 let BotonTrabajo = document.querySelector(".BotonTrabajo")
-let BotonDescanso = document.querySelector(".BotonDescanso")	
+let BotonDescanso = document.querySelector(".BotonDescanso")
+
+let inputRequired = document.querySelector(".InputMinutos")
+
+let resultadoInputRequired = inputRequired.maxlength =2
 
 function cambiarModoEstudio(){
 
@@ -143,3 +164,4 @@ function cambiarModoDescanso(){
 	BotonTrabajo.classList.remove("Background")
 	
 }
+
