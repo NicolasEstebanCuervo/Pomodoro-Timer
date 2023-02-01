@@ -1,0 +1,162 @@
+*{
+
+	font-family: 'Arial Rounded MT Bold', sans-serif;
+
+}
+
+.Body{
+
+	background-color: #98ECFF;
+
+}
+
+.Header{
+
+	display: flex;
+	justify-content: center;
+	padding: 10px 0px;
+
+}
+
+.TituloMaquinaEscribir{
+
+	display: block;
+	font-family: "Courier New";
+	white-space: nowrap;
+	border-right: 2px solid;
+	width: 45ch;
+	font-size: 30px;
+
+	animation:typing 10s steps(45),
+
+		blink .5s infinite step-end alternate;
+		overflow: hidden;
+		Animation-Delay:5s;
+		animation-iteration-count: infinite;
+
+;
+
+}
+
+@keyframes typing {
+
+	from{width: 0;}	
+	
+}
+
+@keyframes blink {
+
+	50%{border-color: transparent;}
+	 
+}
+
+.Section{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.ContenedorPrincipal{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 800px;
+
+}
+
+.ContenedorSecundario{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	background: #FFB59F;
+	border-radius: 50px ;
+	width: 500px;
+	height: 500px;
+	-webkit-box-shadow: 0px 0px 30px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px -3px rgba(0,0,0,0.75);
+
+}
+
+.LabelInput{
+
+	font-size: 3vmax;
+
+}
+
+.Input_Individual{
+
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.Input{
+
+	width: 30vmax;
+	height: 3vmax;
+	text-align: center;
+	border-color: transparent;
+	font-size: 2vmax;
+	margin:10px 0px;
+	border-radius: 50px;
+
+}
+
+.tiempoRestante{
+
+	font-size: 3vmax;
+	margin: 0;
+
+}
+
+.GrupoBoton{
+
+	justify-self: center;
+	width: 30vmax;
+	height: 4vmax;
+	text-align: center;
+	border-radius: 100px;
+	border-color: transparent;
+	font-size: 2vmax;
+	margin:10px 0px;
+
+}
+
+.Botones{
+
+	justify-self: center;
+
+}
+
+.Boton{
+
+	padding: 1vw 2vh;
+	margin: 50px 0px;
+	border-color: transparent;
+	border-radius: 100px;
+	background: #FFB59F;
+
+}
+
+.Background{
+
+	background: #FFB59F;
+
+}
+
+.BackgroundDiv{
+
+	background: #98ECFF;
+
+}
