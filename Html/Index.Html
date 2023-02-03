@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 
+	<!-- Nicolas Cuervo -->
+
 <head>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tecnica pomodoro</title>
 	<link rel="stylesheet" href="../Css/Index.Css">
 	<link href="https://fonts.cdnfonts.com/css/arial-rounded-mt-bold" rel="stylesheet">
+
 </head>
 
 <body class="Body">
@@ -27,8 +31,8 @@
 
 			<div class="ContenedorSecundario">
 
-				<h1 class="TituloDescanso">¿Cuanto deseas descansar?</h1>
-				<h1 hidden class="TituloTrabajo">¿Cuanto desear trabajar?</h1>
+				<h1 hidden class="TituloDescansoDiv">¿Cuanto deseas descansar?</h1>
+				<h1 class="TituloTrabajoDiv">¿Cuanto deseas trabajar?</h1>
 
 				<div class="contenedorInputs">
 
@@ -50,13 +54,13 @@
 
 				</div>
 				
-				<h2 class="tiempoRestante">00:00</h2>	
+				<h2 id="tiempoRestante">00:00</h2>	
 				
-				<button class="btnIniciar GrupoBoton">Iniciar</button>
+				<button id="botonIniciar" class="GrupoBoton" onclick="iniciar()">Iniciar</button>
 				
-				<button class="btnPausar GrupoBoton" >Pausar</button>
+				<button id="botonPausar" class="GrupoBoton"  onclick="pausarTemporizador()">Pausar</button>
 				
-				<button class="btnDetener GrupoBoton" >Detener</button>
+				<button id="botonDetener" class="GrupoBoton" onclick="detenerTemporizador()" >Detener</button>
 
 			</div>
 

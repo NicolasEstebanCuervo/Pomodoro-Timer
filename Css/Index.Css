@@ -1,3 +1,5 @@
+/* Nicolas Cuervo */
+
 *{
 
 	font-family: 'Arial Rounded MT Bold', sans-serif;
@@ -28,11 +30,10 @@
 	font-size: 30px;
 
 	animation:typing 10s steps(45),
-
-		blink .5s infinite step-end alternate;
-		overflow: hidden;
-		Animation-Delay:5s;
-		animation-iteration-count: infinite;
+	blink .5s infinite step-end alternate;
+	overflow: hidden;
+	Animation-Delay:5s;
+	animation-iteration-count: infinite;
 
 ;
 
@@ -113,7 +114,7 @@
 
 }
 
-.tiempoRestante{
+#tiempoRestante{
 
 	font-size: 3vmax;
 	margin: 0;
@@ -142,20 +143,20 @@
 .Boton{
 
 	padding: 1vw 2vh;
-	margin: 50px 0px;
+	margin: 20px 0px;
 	border-color: transparent;
 	border-radius: 100px;
 	background: #FFB59F;
 
 }
 
-.Background{
+.BackgroundNumeroUno{
 
 	background: #FFB59F;
 
 }
 
-.BackgroundDiv{
+.BackgroundNumeroDos{
 
 	background: #98ECFF;
 
