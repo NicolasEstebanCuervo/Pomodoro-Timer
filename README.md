@@ -5,7 +5,7 @@
    <h3 align="center">Diariamente vemos en internet diferentes tecnicas para estudiar y trabajar activamente, y en los ultimos años se hizo
    muy famosa la tecnica "Pomodoro" Que consiste en un trabajo intensivo de 25 cada 30 minutos. asi que me di a la tarea de programar mi propio
    temporizador con esta tecnica para poder tener un tiempo de estudio mas producto, Y tu. ¿Te atreves a probarlo?
-   .</h3>
+   </h3>
 
 </div>
 
