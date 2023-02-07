@@ -8,7 +8,7 @@
 
 .Body{
 
-	background-color: #98ECFF;
+	background-color: #2F4070;
 
 }
 
@@ -76,7 +76,7 @@
 	align-content: center;
 	text-align: center;
 	flex-wrap: wrap;
-	background: #FFB59F;
+	background: #C74242;
 	border-radius: 50px ;
 	width: 500px;
 	height: 450px;
@@ -146,18 +146,18 @@
 	margin: 20px 0px;
 	border-color: transparent;
 	border-radius: 100px;
-	background: #FFB59F;
+	background: #C74242;
 
 }
 
 .BackgroundNumeroUno{
 
-	background: #FFB59F;
+	background: #C74242;
 
 }
 
 .BackgroundNumeroDos{
 
-	background: #98ECFF;
+	background: #2F4070;
 
 }
