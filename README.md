@@ -13,7 +13,7 @@
 
 <div align="center">
     <div>
-        <img src="https://acortar.link/Ify89s" alt="Imagen-de-Whats-App-2023-02-06-a-las-22-00-13"/>
+        <img src="https://acortar.link/Ify89s"/>
     </div>
 </div>
 
