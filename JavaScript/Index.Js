@@ -18,6 +18,24 @@ const $tiempoRestante = document.querySelector("#tiempoRestante"),
 	$InputMinutos = document.querySelector(".InputMinutos"),
 	$InputSegundos = document.querySelector(".InputSegundos");
 
+  let idInterval = null, 
+	diferenciaTemporal = 0,
+	fechaFuturo = null;
+
+const cargarSonido = function (fuente) {
+
+	const sonido = document.createElement("audio");
+	sonido.src = fuente;
+	sonido.setAttribute("preload", "auto");
+	sonido.setAttribute("controls", "none");
+	sonido.style.display = "none"; // <-- oculto
+	document.body.appendChild(sonido);
+	return sonido;
+
+};
+
+const sonido = cargarSonido("../Sonido/timer.wav");
+
 function cambiarModo(){
  
 	$Body.classList.toggle("BackgroundNumeroUno")
@@ -75,24 +93,6 @@ $InputSegundos.oninput = function () {
         this.value = this.value.slice(0,2); 
     }
 }
-
-let idInterval = null, 
-	diferenciaTemporal = 0,
-	fechaFuturo = null;
-
-const cargarSonido = function (fuente) {
-
-	const sonido = document.createElement("audio");
-	sonido.src = fuente;
-	sonido.setAttribute("preload", "auto");
-	sonido.setAttribute("controls", "none");
-	sonido.style.display = "none"; // <-- oculto
-	document.body.appendChild(sonido);
-	return sonido;
-
-};
-
-const sonido = cargarSonido("../Sonido/timer.wav");
 
 function ocultarElemento (elemento) {
 		
@@ -216,8 +216,7 @@ function iniciar (){
 		return;
 			
 	}
-		
-	init()	
+	
 	iniciarTemporizador(minutos, segundos);
 	ocultarElemento($contenedorInputs);
 	ocultarElemento($botonIniciar);

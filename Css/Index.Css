@@ -1,5 +1,11 @@
 /* Nicolas Cuervo */
 
+html{
+
+  height: 100%
+  
+}
+
 *{
 
 	font-family: 'Arial Rounded MT Bold', sans-serif;
@@ -9,25 +15,29 @@
 .Body{
 
 	background-color: #2F4070;
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+  align-content: center;
+  height: 100vh;
 
 }
 
-.Header{
+.TextoMaquinaEscribir{
 
-	display: flex;
-	justify-content: center;
-	padding: 10px 0px;
+  display: flex;
+  justify-content: center;
 
 }
 
 .TituloMaquinaEscribir{
-
+  
 	display: block;
 	font-family: "Courier New";
 	white-space: nowrap;
 	border-right: 2px solid;
 	width: 45ch;
-	font-size: 30px;
+	font-size: 2vmax;
 
 	animation:typing 10s steps(45),
 	blink .5s infinite step-end alternate;
@@ -35,7 +45,15 @@
 	Animation-Delay:5s;
 	animation-iteration-count: infinite;
 
-;
+}
+
+@media (max-width: 400px) {
+
+  .TituloMaquinaEscribir{
+
+    font-size: 1.5vmax;
+
+  }
 
 }
 
@@ -54,7 +72,6 @@
 .Section{
 
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 
 }
@@ -63,8 +80,15 @@
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	max-width: 800px;
+	justify-content: center; 
+  align-content: center;
+  width: 50vmax;
+
+}
+
+.Titulo{
+
+  font-size: 2.1vmax;
 
 }
 
@@ -77,9 +101,8 @@
 	text-align: center;
 	flex-wrap: wrap;
 	background: #C74242;
-	border-radius: 50px ;
-	width: 500px;
-	height: 450px;
+	border-radius: 5vmax ;
+	padding: 0vmax 3vmax 2vmax 3vmax;
 	-webkit-box-shadow: 0px 0px 30px -3px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 30px -3px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 30px -3px rgba(0,0,0,0.75);
@@ -104,14 +127,23 @@
 
 .Input{
 
-	width: 30vmax;
 	height: 3vmax;
 	text-align: center;
 	border-color: transparent;
 	font-size: 2vmax;
-	margin:10px 0px;
+	margin: 1vmax 0px;
 	border-radius: 50px;
 
+}
+
+@media (max-width: 500px) {
+
+  .Input{ 
+
+    height: 2vmax;
+
+  } 
+  
 }
 
 #tiempoRestante{
@@ -130,25 +162,48 @@
 	border-radius: 100px;
 	border-color: transparent;
 	font-size: 2vmax;
-	margin:10px 0px;
 
+}
+
+@media (max-width: 500px) {
+
+  .GrupoBoton{ 
+
+    height: 3.6vmax;
+
+  } 
+  
 }
 
 .Botones{
 
-	justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
 }
 
 .Boton{
 
-	padding: 1vw 2vh;
-	margin: 20px 0px;
+	padding: 1.2vmax 1vmax;
+	margin: 1vmax 1vmax;
+  font-size: 1.2vmax;
 	border-color: transparent;
 	border-radius: 100px;
 	background: #C74242;
 
 }
+
+@media (max-width: 500px) {
+
+  .Boton{
+
+    font-size: 2vmax;
+  
+  }
+
+}
+
 
 .BackgroundNumeroUno{
 
