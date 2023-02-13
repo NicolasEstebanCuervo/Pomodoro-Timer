@@ -142,12 +142,12 @@ function init () {
 
 function pausarTemporizador () {
 
-	$botonIniciar.innerHTML = "Reanudar"
 	ocultarElemento($botonPausar);
 	mostrarElemento($botonIniciar);
 	mostrarElemento($botonDetener);
 	diferenciaTemporal = fechaFuturo.getTime() - new Date().getTime();
 	clearInterval(idInterval);
+  $botonIniciar.innerHTML = "Reanudar";
 
 };
 
