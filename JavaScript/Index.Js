@@ -7,8 +7,6 @@ const $tiempoRestante = document.querySelector("#tiempoRestante"),
 	$minutos = document.querySelector("#minutos"),
 	$segundos = document.querySelector("#segundos"),
 	$contenedorInputs = document.querySelector(".contenedorInputs"),
-	$TituloDescanso = document.querySelector(".TituloDescanso"),
-	$TituloTrabajo = document.querySelector(".TituloTrabajo"),
 	$Body = document.querySelector(".Body"),
 	$ContenedorSecundario = document.querySelector(".ContenedorSecundario"),
 	$BotonTrabajo = document.querySelector(".BotonTrabajo"),
@@ -40,8 +38,6 @@ function cambiarModo(){
  
 	$Body.classList.toggle("BackgroundNumeroUno")
 	$ContenedorSecundario.classList.toggle("BackgroundNumeroDos")
-	$TituloDescanso.toggleAttribute("hidden")
-	$TituloTrabajo.toggleAttribute("hidden")
 	$BotonTrabajo.classList.toggle("BackgroundNumeroUno")
 	$BotonTrabajo.classList.toggle("BackgroundNumeroDos")
 	$BotonDescanso.classList.toggle("BackgroundNumeroDos")
@@ -55,8 +51,6 @@ function cambiarModoEstudio(){
 
 	$Body.classList.remove("BackgroundNumeroUno")
 	$ContenedorSecundario.classList.remove("BackgroundNumeroDos")
-	$TituloDescanso.setAttribute("hidden" , "")
-	$TituloTrabajo.removeAttribute("hidden")
 	$BotonTrabajo.classList.add("BackgroundNumeroUno")
 	$BotonTrabajo.classList.remove("BackgroundNumeroDos")
 	$BotonDescanso.classList.remove("BackgroundNumeroDos")
@@ -70,8 +64,6 @@ function cambiarModoDescanso(){
 
 	$Body.classList.add("BackgroundNumeroUno")
 	$ContenedorSecundario.classList.add("BackgroundNumeroDos")
-	$TituloDescanso.removeAttribute("hidden")
-	$TituloTrabajo.setAttribute("hidden" , "")
 	$BotonTrabajo.classList.remove("BackgroundNumeroUno")
 	$BotonTrabajo.classList.add("BackgroundNumeroDos")
 	$BotonDescanso.classList.add("BackgroundNumeroDos")

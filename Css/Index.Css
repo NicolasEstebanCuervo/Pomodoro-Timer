@@ -27,6 +27,7 @@ html{
 
   display: flex;
   justify-content: center;
+  margin: 15px 0px;
 
 }
 
@@ -83,12 +84,6 @@ html{
 	justify-content: center; 
   align-content: center;
   width: 50vmax;
-
-}
-
-.Titulo{
-
-  font-size: 2.1vmax;
 
 }
 
