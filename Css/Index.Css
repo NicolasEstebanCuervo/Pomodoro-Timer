@@ -16,9 +16,10 @@ html{
 
 	background-color: #2F4070;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-	justify-content: center;
   align-content: center;
+	justify-content: center;
   height: 100vh;
 
 }
@@ -48,11 +49,11 @@ html{
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
   .TituloMaquinaEscribir{
 
-    font-size: 1.5vmax;
+    display: none;
 
   }
 
@@ -74,6 +75,12 @@ html{
 
 	display: flex;
 	justify-content: center;
+
+}
+
+.Titulo{
+
+  font-size: 2.1vmax;
 
 }
 
@@ -105,11 +112,11 @@ html{
 
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
 
   .ContenedorSecundario{
 
-    height: 40vmax;
+    height: 38vmax;
 
   }
 
@@ -163,7 +170,6 @@ html{
 .GrupoBoton{
 
 	justify-self: center;
-	width: 30vmax;
 	height: 4vmax;
   margin: 2vh;
 	text-align: center;
@@ -189,6 +195,26 @@ html{
   flex-wrap: wrap;
   justify-content: center;
 
+}
+
+@media (max-width: 500px) {
+
+  .Botones{ 
+
+    flex-direction: column-reverse;
+
+  } 
+  
+}
+
+@media (max-width: 500px) {
+
+  .GrupoBoton{ 
+
+    height: 3.6vmax;
+
+  } 
+  
 }
 
 .Boton{
