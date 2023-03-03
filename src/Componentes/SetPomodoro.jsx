@@ -1,0 +1,58 @@
+import React from 'react';
+import { useContext, useState } from 'react';
+import {FuncionesContext}  from "./Funciones_Reloj";
+import "../HojasDeEstilo/SetPomodoro.css";
+
+const SetPomodoro = () => {
+  const [newTimer, setNewTimer] = useState({
+    work: 25,
+    short: 5,
+    long: 15,
+    active: 'work'
+  })
+
+  const {updateExecute} = useContext(FuncionesContext )
+      
+  const handleChange = (input) => {
+    const {name, value} = input.target
+    switch (name) {
+      case 'work':
+        setNewTimer({
+          ...newTimer,
+          work: parseInt(value)
+      })
+      break;
+      case 'shortBreak':
+        setNewTimer({
+          ...newTimer,
+          short: parseInt(value)
+      })
+      break;
+      case 'longBreak':
+        setNewTimer({
+          ...newTimer,
+          long: parseInt(value)
+      })
+      break;
+    }
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    updateExecute(newTimer)
+  }
+
+  return (
+    <div className="form-container">
+      <form noValidate onSubmit={handleSubmit}>
+        <div className="input-wrapper">
+          <input className="input" type="number" name="work" onChange={handleChange} value={newTimer.work} />
+          <input className="input" type="number" name="shortBreak" onChange={handleChange} value={newTimer.short} />
+          <input className="input" type="number" name="longBreak" onChange={handleChange} value={newTimer.long} />
+        </div>
+        <button type='submit'>Comenzar</button>
+      </form>
+    </div>
+  )
+}
+export default SetPomodoro

@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.contenedor {
+  color:#c9ccea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #21234D;
+}
+
+.contenedor h1 {
+  font-size:2.6rem;
+  margin-bottom:0.2rem;
+}
+
+.contenedor h2{
+  font-size:1.5rem;
+  margin-bottom:0.2rem;
+}
+
+.opciones{
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding:.3rem .3rem;
+  background-color: #0C0E1B;
+  border-radius: 1.5rem;
+}
+
+.opcion-activada {
+  color: black;
+  background-color: #7575EE;
+}
+
+.contenedor-reloj {
+  display: flex;
+  flex:2;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-contenedor-reloj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 7.5rem;
+  color:#efefef;
+  background: #151932;
+  font-size: 3.5rem;
+  box-shadow: 1rem 1.5rem 2rem rgba(0,0,0,0.6)
+}
+
+.contenedor-botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2rem
+}
