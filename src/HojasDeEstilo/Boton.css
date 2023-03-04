@@ -1,11 +1,12 @@
-button {
-  color:#efefef;
-  font-size:0.8rem;
+.button{
+  font-size:1rem;
   padding: 0.5rem 1.2rem;
   border:none;
   border-radius:3rem;
-  margin:0.2rem;;
-  background:#0C0E1B;
-  min-width: 80px;
+  margin:0.2rem;
   cursor: pointer;
+}
+button{
+  color:#efefef;
+  background:#0C0E1B;
 }
