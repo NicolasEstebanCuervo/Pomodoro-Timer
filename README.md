@@ -13,7 +13,7 @@
 
 <div align="center">
     <div>
-        <img src="https://acortar.link/Ify89s"/>
+        <img src="https://acortar.link/XnEmIf"/>
     </div>
 </div>
 
