@@ -5,7 +5,7 @@ import AnimacionReloj from './Componentes/Animacion_Reloj';
 import SetPomodoro from './Componentes/SetPomodoro';
 import {FuncionesContext} from "./Componentes/Funciones_Reloj";
 import ListaTareas from "./Componentes/ListaTareas";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const {

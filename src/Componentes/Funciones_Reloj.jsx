@@ -1,9 +1,13 @@
 import React from "react";
 import { useState, createContext } from "react";
+import useSound from 'use-sound';
+import sonido from '../Sonido/timer.mp3';
 
 export const FuncionesContext = createContext()
 
 function Funciones_Reloj (props) {
+
+  const [play] = useSound(sonido);    
 
   function agregarCeroSiEsNecesario (valor) {
 
@@ -51,7 +55,7 @@ function Funciones_Reloj (props) {
     const seconds = agregarCeroSiEsNecesario(remainingTime % 60)
   
     if(minutes == "00" && seconds == "00"){
-      
+      play()
     }
 
     return `${minutes}:${seconds}`
