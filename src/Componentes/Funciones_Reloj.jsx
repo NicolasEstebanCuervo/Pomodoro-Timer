@@ -26,13 +26,36 @@ function Funciones_Reloj (props) {
     const [executing, setExecuting] = useState({})
     const [startAnimate, setStartAnimate] = useState(false)
 
-    function setCurrentTimer (active_state) {
-        updateExecute({
+    const updateExecute = (updatedSettings) => {
+      setExecuting(updatedSettings)
+      setTimerTime(updatedSettings)
+    }
+
+    const setCurrentTimer = (active_state) => {
+      updateExecute({
           ...executing,
           active: active_state
         })
-        setTimerTime(executing)
+        setTimerTime(active_state)
+        pauseTimer()
     }
+
+    const setTimerTime = (evaluate) => {
+      switch (evaluate.active) {
+          case 'work':
+              setPomodoro(evaluate.work)
+              break;
+          case 'short':
+              setPomodoro(evaluate.short)
+              break;
+          case 'long':
+              setPomodoro(evaluate.long)
+              break;
+              default:
+              setPomodoro(0)
+              break;
+      }
+  }
 
     // start animation fn 
     function startTimer() {
@@ -60,28 +83,6 @@ function Funciones_Reloj (props) {
 
     return `${minutes}:${seconds}`
 
-    }
-
-    const updateExecute = updatedSettings => {
-        setExecuting(updatedSettings)
-        setTimerTime(updatedSettings)
-    }
-
-    const setTimerTime = (evaluate) => {
-        switch (evaluate.active) {
-            case 'work':
-                setPomodoro(evaluate.work)
-                break;
-            case 'short':
-                setPomodoro(evaluate.short)
-                break;
-            case 'long':
-                setPomodoro(evaluate.long)
-                break;
-                default:
-                    setPomodoro(0)
-                break;
-        }
     }
 
     function stopAnimate() {

@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect, useContext } from 'react';
+import {FuncionesContext} from "./Componentes/Funciones_Reloj";
 import Boton from './Componentes/Boton';
 import AnimacionReloj from './Componentes/Animacion_Reloj';
 import SetPomodoro from './Componentes/SetPomodoro';
-import {FuncionesContext} from "./Componentes/Funciones_Reloj";
 import ListaTareas from "./Componentes/ListaTareas";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

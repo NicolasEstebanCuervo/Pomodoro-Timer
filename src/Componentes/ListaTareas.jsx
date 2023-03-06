@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import TareaFormulario from "./TareaFormulario";
-import "../HojasDeEstilo/ListaTareas.css"
 import Tarea from "./Tarea"
+import "../HojasDeEstilo/ListaTareas.css"
 
 function ListaTareas(){
 
@@ -20,14 +20,14 @@ function ListaTareas(){
     setTarea(tareasActualizada)
   }
 
-  const completarTarea = (id) => {
+  const completarTarea = (id) => {  
     const tareasActualizada = tareas.map(tarea =>{
       if(tarea.id === id){
         tarea.completada = !tarea.completada
       }
       return tarea
     });
-    setTarea(tareasActualizada)
+      setTarea(tareasActualizada)
   }
 
   return(

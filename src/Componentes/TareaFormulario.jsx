@@ -15,11 +15,12 @@ function TareaFormulario (props){
     const tareaNueva  = {
       id:uuidv4(),
       texto:input,
-      completada:false 
+      completada:false
     }
     props.onSubmit(tareaNueva)
+    setInput("")
   }
-   
+
   return(
     <div className="input-group mb-3">
       <form className="tarea-formulario container"
@@ -30,6 +31,7 @@ function TareaFormulario (props){
         placeholder="Escribe una tarea"
         type="text" 
         onChange={inputNuevo}
+        value={input}
         />
         <div className="input-group-append div-boton">
           <button className="boton-agregar">Agregar Tarea</button>

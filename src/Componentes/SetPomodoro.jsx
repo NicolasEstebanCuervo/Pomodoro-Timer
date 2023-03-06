@@ -4,14 +4,15 @@ import {FuncionesContext}  from "./Funciones_Reloj";
 import "../HojasDeEstilo/SetPomodoro.css";
 
 const SetPomodoro = () => {
+
+  const {updateExecute} = useContext(FuncionesContext)
+
   const [newTimer, setNewTimer] = useState({
     work: 25,
     short: 5,
     long: 15,
     active: 'work'
   })
-
-  const {updateExecute} = useContext(FuncionesContext )
       
   const handleChange = (input) => {
     const {name, value} = input.target
@@ -22,13 +23,13 @@ const SetPomodoro = () => {
           work: parseInt(value)
       })
       break;
-      case 'shortBreak':
+      case 'short':
         setNewTimer({
           ...newTimer,
           short: parseInt(value)
       })
       break;
-      case 'longBreak':
+      case 'long':
         setNewTimer({
           ...newTimer,
           long: parseInt(value)
@@ -37,7 +38,7 @@ const SetPomodoro = () => {
     }
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     updateExecute(newTimer)
   }
