@@ -11,7 +11,7 @@
 
 ###  🧑 Sobre mi:
    
--Soy un joven colombiano de 16 años apasionado por aprender programacion,actualmente me encuentro en formacion para ser un proximo desarrollador FrontEnd
+- Soy un joven colombiano de 16 años apasionado por aprender programacion,actualmente me encuentro en formacion para ser un proximo desarrollador FrontEnd
    
 - Tengo un gran manejo de herramientas como lo son Html y Css y estoy en la exploracion de realizar y perfeccionar herramientas como lo son
   Bootstrap y Sass para tener una mejor tecnica de diseño web.
