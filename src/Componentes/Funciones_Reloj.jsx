@@ -57,35 +57,28 @@ function Funciones_Reloj (props) {
       }
   }
 
-    // start animation fn 
     function startTimer() {
       setStartAnimate(true)
     }
-    // pause animation fn 
+
     function pauseTimer() {
       setStartAnimate(false)
     }
 
-    // clear session storage 
     const SettingsBtn = () => {
       setExecuting({})
       setPomodoro(0)
     }
 
-    // pass time to counter 
     const children = ({ remainingTime }) => {
     const minutes = agregarCeroSiEsNecesario(Math.floor(remainingTime / 60))
     const seconds = agregarCeroSiEsNecesario(remainingTime % 60)
-  
-    if(minutes == "00" && seconds == "00"){
-      play()
-    }
 
     return `${minutes}:${seconds}`
-
     }
 
-    function stopAnimate() {
+    functiosan stopAnimate() {
+      play()
       setStartAnimate(false)
     }
 
