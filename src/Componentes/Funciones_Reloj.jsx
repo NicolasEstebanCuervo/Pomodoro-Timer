@@ -77,7 +77,7 @@ function Funciones_Reloj (props) {
     return `${minutes}:${seconds}`
     }
 
-    functiosan stopAnimate() {
+    function stopAnimate() {
       play()
       setStartAnimate(false)
     }
