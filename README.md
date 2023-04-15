@@ -34,16 +34,18 @@ en las dependencia del proyecto. Para solucionarlo abra la terminal del proyecto
 
 ---
 
-###  🧑 Sobre mi:
+###  📘 Librerias usadas:
    
-Soy una persona capacitada para estructurar un proyecto en base al conocimiento en herramientas de FrontEnd, algunas de las herramientas y lenguajes en las cuales me destacó son:
+En caso tal de que te interese alguna de las librerias usadas aca te dejo una lista donde puedes encontrarlas:
 
-- Lenguaje y herramientas de diseño como lo son: HTML, Css, Bootstrap y lenguaje SASS.
+- Bootstrap: npm install bootstrap.
+- Howler: npm install howler.
+- React Audio Player: npm install react-audio-player.
+- React-Countdown-Circle-timer: npm install react-countdown-circle-timer.
+- React Icons: npm install react-icons.
+- Use Sound: npm install use-sound.
+- Uuidv4: npm install uuidv4.
 
-- Lenguajes de programación y librerías cómo lo son: Javascript y React Js.
-
-- Uso de herramientas de programación como lo son: Git y Github.
-   
 ---
 
 ### 📱 Redes de contacto :
