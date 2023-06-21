@@ -16,6 +16,8 @@
   text-align: center;
   font-size: 14pt;
   box-sizing: content-box;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
