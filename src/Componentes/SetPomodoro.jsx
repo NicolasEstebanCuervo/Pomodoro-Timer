@@ -16,6 +16,8 @@ const SetPomodoro = () => {
       
   const handleChange = (input) => {
     const {name, value} = input.target
+
+    if (!isNaN(value) && parseInt(value) >= 1 && parseInt(value) <= 99) {
     switch (name) {
       case 'work':
         setNewTimer({
@@ -35,7 +37,7 @@ const SetPomodoro = () => {
           long: parseInt(value)
       })
       break;
-    }
+    }}
   }
 
   const handleSubmit = (e) => {
