@@ -48,8 +48,8 @@ const SetPomodoro = () => {
       <form noValidate onSubmit={handleSubmit}>
         <div className="input-wrapper">
           <input className="input" type="number" name="work" onChange={handleChange} value={newTimer.work} />
-          <input className="input" type="number" name="shortBreak" onChange={handleChange} value={newTimer.short} />
-          <input className="input" type="number" name="longBreak" onChange={handleChange} value={newTimer.long} />
+          <input className="input" type="number" name="short" onChange={handleChange} value={newTimer.short} />
+          <input className="input" type="number" name="long" onChange={handleChange} value={newTimer.long} />
         </div>
         <button className='button' type='submit'>Comenzar</button>
       </form>
