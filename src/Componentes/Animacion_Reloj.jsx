@@ -21,7 +21,7 @@ const AnimacionReloj = ({ animate, timer, children }) => {
 };
 
 const calculateSize = () => {
-  const extraSmallScreenSize = 60;
+  const extraSmallScreenSize = 90;
   const smallScreenSize = 110;
   const mediumScreenSize = 120;
   const largeScreenSize = 150;
