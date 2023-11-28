@@ -2,9 +2,13 @@
   display: flex;
 }
 
+.container{
+  margin: 0 !important;
+}
+
 .input-texto{
   display: block;
-  width: 100%;
+  width: 60%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -18,8 +22,7 @@
 .boton-agregar{
   display: block;
   margin: 0 10px;
-  width: 130px;
-  padding: 5px 5px;
+  width: 90%;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -30,30 +33,39 @@
   height: 50px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .input-texto{
-    height: 35px;
-    width: 100%;
-    font-size: 3.2vw;
+    padding: 1vh 1vw;
   }
   .boton-agregar{
-    height: 35px;
-    width: 21vw;
-    font-size: 3vw;
-    padding: 0;
+    padding: 1vh 1vw;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .input-texto{
-    width: 100%;
+    padding: 0.5vh 2vw;
+    font-size: 5vw;
+    height: 5vh;
+  }
+
+  .boton-agregar{
+    padding: 0.5vh 1vw;
     font-size: 4vw;
-  }
-  .boton-agregar{
-    width: 20vw;
-    font-size: 3.2vw;
-    margin: 0px 0px 0 5px;
-    padding: 0 5px;
+    height: 5vh;
   }
 }
 
+@media (max-width: 200px) {
+  .input-texto{
+    padding: 0.5vh 2vw;
+    font-size: 5vw;
+    height: 3vh;
+  }
+
+  .boton-agregar{
+    padding: 0.5vh 1vw;
+    font-size: 4vw;
+    height: 3vh;
+  }
+}

@@ -1,21 +1,42 @@
 import React from 'react';
-import { useContext } from 'react'
-import {CountdownCircleTimer} from 'react-countdown-circle-timer'
-import {FuncionesContext}  from './Funciones_Reloj'
+import { useContext } from 'react';
+import { CountdownCircleTimer } from 'react-countdown-circle-timer';
+import { FuncionesContext } from './Funciones_Reloj';
 
-const AnimacionReloj = ({animate,timer,children}) => {
-  const { stopAnimate } = useContext(FuncionesContext)
+const AnimacionReloj = ({ animate, timer, children }) => {
+  const { stopAnimate } = useContext(FuncionesContext);
 
-    return (
-      <CountdownCircleTimer
+  return (
+    <CountdownCircleTimer
       isPlaying={animate}
       duration={timer * 60}
       colors={['#7575EE']}
       colorsTime={[1]}
       onComplete={() => stopAnimate()}
-      >
-        {children}
-      </CountdownCircleTimer>
-    )
-}
-export default AnimacionReloj
+      size={calculateSize()}
+    >
+      {children}
+    </CountdownCircleTimer>
+  );
+};
+
+const calculateSize = () => {
+  const smallScreenSize = 90;
+  const mediumScreenSize = 120;
+  const largeScreenSize = 150;
+  const extraLargeScreenSize = 200;
+
+  const screenSize = window.innerWidth;
+
+  if (screenSize <= 200) {
+    return smallScreenSize;
+  } else if (screenSize <= 300) {
+    return mediumScreenSize;
+  } else if (screenSize <= 400) {
+    return largeScreenSize;
+  } else {
+    return extraLargeScreenSize;
+  }
+};
+
+export default AnimacionReloj;

@@ -22,7 +22,7 @@ function TareaFormulario (props){
   }
 
   return(
-    <div className="input-group mb-3">
+    <div className="input-group">
       <form className="tarea-formulario container"
         onSubmit={enviar}
       >
