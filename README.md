@@ -28,9 +28,8 @@
 
 ### `❌ Posible error al ejecutar el proyecto`
 
-- Si usted ejecuta el comando "npm start" Y le sale el siguien error "Error: Cannot find module 'react-scripts'" Esto puede ser debido a un error
-en las dependencia del proyecto. Para solucionarlo abra la terminal del proyecto y ejecute el siguiente comando "npm install react-scripts
-".
+- Si usted ejecuta el comando "npm start" Y le sale el siguien error "Error: Cannot find module 'react-scripts'" Esto puede ser debido a que las librerias aun no han sido instaladas.
+ Para solucionarlo abra la terminal del proyecto y ejecute el siguiente comando "npm install".
 
 ---
 
